@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ecse321.mcgill.ca.urlms">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" /></intent-filter></activity>
+
+        <activity android:name=".AddStaffActivity"><intent-filter>
+                <action android:name="android.intent.action.INSERT" /></intent-filter></activity>
+        <activity android:name=".StaffActivity"><intent-filter>
+                <action android:name="android.intent.action.VIEW" /></intent-filter></activity>
+
+        <activity android:name=".AddInventoryActivity"><intent-filter>
+                <action android:name="android.intent.action.INSERT" /></intent-filter></activity>
+        <activity android:name=".InventoryActivity"><intent-filter>
+                <action android:name="android.intent.action.VIEW" /></intent-filter></activity>
+
+        <activity android:name=".AddProgressActivity"><intent-filter>
+                <action android:name="android.intent.action.INSERT" /></intent-filter></activity>
+        <activity android:name=".ProgressActivity"><intent-filter>
+                <action android:name="android.intent.action.VIEW" /></intent-filter></activity>
+        <activity android:name=".ViewProgressActivity"><intent-filter>
+            <action android:name="android.intent.action.VIEW" /></intent-filter></activity>
+
+        <activity android:name=".FundingActivity"><intent-filter>
+            <action android:name="android.intent.action.VIEW" /></intent-filter></activity>
+        <activity android:name=".AddExpenseActivity"><intent-filter>
+            <action android:name="android.intent.action.INSERT" /></intent-filter></activity>
+        <activity android:name=".FundingSettings"><intent-filter>
+            <action android:name="android.intent.action.INSERT" /></intent-filter></activity>
+
+    </application>
+
+</manifest>

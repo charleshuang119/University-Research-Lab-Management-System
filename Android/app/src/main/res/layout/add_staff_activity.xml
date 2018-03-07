@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/colorRed"
+        tools:text="Error Message" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="0.00"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/first_name"
+            android:textSize="20dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/last_name"
+            android:textSize="20dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <RadioGroup
+        android:id = "@+id/radio_group_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/radio_directors"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text= "@string/director"
+            android:textSize="20dp"/>
+        <RadioButton
+            android:id="@+id/radio_assistant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/assistant"
+            android:textSize="20dp"
+            />
+        <RadioButton
+            android:id="@+id/radio_associate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/associate"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/buttonAddStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/save_button"
+        android:textSize="20dp"/>
+
+</LinearLayout>

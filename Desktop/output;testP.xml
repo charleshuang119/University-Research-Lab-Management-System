@@ -1,0 +1,51 @@
+<urlms id="1">
+  <singleLab id="2">
+    <staff id="3">
+      <staff id="4">
+        <firstName>Li</firstName>
+        <lastName>Zhang</lastName>
+        <idNumber>6</idNumber>
+        <role class="associate" id="5">
+          <salary>0</salary>
+        </role>
+        <expenses id="6"/>
+        <progressUpdates id="7"/>
+        <lab reference="2"/>
+      </staff>
+      <staff id="8">
+        <firstName>Charles</firstName>
+        <lastName>Huang</lastName>
+        <idNumber>7</idNumber>
+        <role class="assistant" id="9">
+          <salary>0</salary>
+        </role>
+        <expenses id="10"/>
+        <progressUpdates id="11"/>
+        <lab reference="2"/>
+      </staff>
+      <staff id="12">
+        <firstName>Gabe</firstName>
+        <lastName>Tadesse</lastName>
+        <idNumber>8</idNumber>
+        <role class="associate" id="13">
+          <salary>0</salary>
+        </role>
+        <expenses id="14"/>
+        <progressUpdates id="15"/>
+        <lab reference="2"/>
+      </staff>
+    </staff>
+    <progressUpdates id="16"/>
+    <fundingAccount id="17">
+      <allocatedAmount>0</allocatedAmount>
+      <remainingAmount>0</remainingAmount>
+      <expenses id="18"/>
+      <lab reference="2"/>
+    </fundingAccount>
+    <inventory id="19">
+      <resources id="20"/>
+      <lab reference="2"/>
+    </inventory>
+    <uRLMS reference="1"/>
+  </singleLab>
+</urlms>

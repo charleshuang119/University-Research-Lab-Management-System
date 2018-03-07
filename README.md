@@ -1,0 +1,5 @@
+Web App: This app had some html assets generated via an online builder, as such in order to properly view the application an internet connection is required. 
+
+Android: This folder contains the source code for the mobile application, including tests, the gradle build files and the libraries used. To run the application install the .apk file ("app-release-unsigned.apk"in app\build\outputs\apk) on your android device.
+
+Desktop: This folder contains the source code for the desktop application, also including tests, build files, and the libraries used. To run the application, double click the URLMS.jar file. On the first log in, the user will be prompted to enter an admin password. The user can log in with that password and has all the permissions. To log in as a staff, the user must first log in as admin, create a staff member, and use the generated ID to log in after closing the application.

@@ -1,0 +1,186 @@
+<urlms id="1">
+  <singleLab id="2">
+    <rootPassword>root</rootPassword>
+    <staff id="3">
+      <staff id="4">
+        <firstName>Andi</firstName>
+        <lastName>Camille</lastName>
+        <password></password>
+        <iD>51275</iD>
+        <role class="associate" id="5">
+          <salary>0</salary>
+        </role>
+        <expenses id="6">
+          <expense id="7">
+            <description>Plane tickets</description>
+            <amount>2000.0</amount>
+            <date id="8">2017-12-06</date>
+            <type>TRAVEL</type>
+            <fundingAccount id="9">
+              <allocatedAmount>400000.0</allocatedAmount>
+              <remainingAmount>0.0</remainingAmount>
+              <expenses id="10">
+                <expense id="11">
+                  <description>Pencils</description>
+                  <amount>20.0</amount>
+                  <date id="12">2017-12-06</date>
+                  <type>RESOURCE</type>
+                  <fundingAccount reference="9"/>
+                </expense>
+                <expense reference="7"/>
+                <expense id="13">
+                  <description>Chairs that have very small cup holders</description>
+                  <amount>25.0</amount>
+                  <date id="14">2017-12-06</date>
+                  <type>RESOURCE</type>
+                  <fundingAccount reference="9"/>
+                </expense>
+                <expense id="15">
+                  <description>Silly putty</description>
+                  <amount>10.0</amount>
+                  <date id="16">2017-12-06</date>
+                  <type>OTHER</type>
+                  <fundingAccount reference="9"/>
+                </expense>
+                <expense id="17">
+                  <description>Computers</description>
+                  <amount>3000.0</amount>
+                  <date id="18">2017-12-06</date>
+                  <type>RESOURCE</type>
+                  <fundingAccount reference="9"/>
+                </expense>
+                <expense id="19">
+                  <description>Wine</description>
+                  <amount>200.0</amount>
+                  <date id="20">2017-12-06</date>
+                  <type>OTHER</type>
+                  <fundingAccount reference="9"/>
+                </expense>
+                <expense id="21">
+                  <description>Candies</description>
+                  <amount>3050.0</amount>
+                  <date id="22">2017-12-06</date>
+                  <type>OTHER</type>
+                  <fundingAccount reference="9"/>
+                </expense>
+              </expenses>
+              <lab reference="2"/>
+            </fundingAccount>
+          </expense>
+        </expenses>
+        <progressUpdates id="23"/>
+        <lab reference="2"/>
+      </staff>
+      <staff id="24">
+        <firstName>Charles</firstName>
+        <lastName>Huang</lastName>
+        <password></password>
+        <iD>36124</iD>
+        <role class="associate" id="25">
+          <salary>0</salary>
+        </role>
+        <expenses id="26">
+          <expense reference="17"/>
+        </expenses>
+        <progressUpdates id="27"/>
+        <lab reference="2"/>
+      </staff>
+      <staff id="28">
+        <firstName>Li</firstName>
+        <lastName>Zhang</lastName>
+        <password>lol</password>
+        <iD>94885</iD>
+        <role class="assistant" id="29">
+          <salary>0</salary>
+        </role>
+        <expenses id="30">
+          <expense reference="15"/>
+        </expenses>
+        <progressUpdates id="31">
+          <progressUpdate id="32">
+            <description>First day at work.
+Who are these REBELS?? and what do they want with me...</description>
+            <firstName>Li</firstName>
+            <lastName>Zhang</lastName>
+            <date id="33">2017-12-06</date>
+            <lab reference="2"/>
+          </progressUpdate>
+        </progressUpdates>
+        <lab reference="2"/>
+      </staff>
+      <staff id="34">
+        <firstName>Shane</firstName>
+        <lastName>McIntosh</lastName>
+        <password>rebel</password>
+        <iD>51468</iD>
+        <role class="director" id="35">
+          <salary>0</salary>
+        </role>
+        <expenses id="36">
+          <expense reference="13"/>
+          <expense reference="21"/>
+        </expenses>
+        <progressUpdates id="37"/>
+        <lab reference="2"/>
+      </staff>
+      <staff id="38">
+        <firstName>Gabe</firstName>
+        <lastName>Negash</lastName>
+        <password></password>
+        <iD>50689</iD>
+        <role class="associate" id="39">
+          <salary>0</salary>
+        </role>
+        <expenses id="40">
+          <expense reference="19"/>
+        </expenses>
+        <progressUpdates id="41">
+          <progressUpdate id="42">
+            <description>This wine i bought tastes amazing!!!</description>
+            <firstName>Gabe</firstName>
+            <lastName>Negash</lastName>
+            <date id="43">2017-12-06</date>
+            <lab reference="2"/>
+          </progressUpdate>
+        </progressUpdates>
+        <lab reference="2"/>
+      </staff>
+      <staff id="44">
+        <firstName>Lucas</firstName>
+        <lastName>Bluethner</lastName>
+        <password></password>
+        <iD>15894</iD>
+        <role class="assistant" id="45">
+          <salary>0</salary>
+        </role>
+        <expenses id="46">
+          <expense reference="11"/>
+        </expenses>
+        <progressUpdates id="47"/>
+        <lab reference="2"/>
+      </staff>
+    </staff>
+    <progressUpdates id="48">
+      <progressUpdate reference="32"/>
+      <progressUpdate reference="42"/>
+    </progressUpdates>
+    <fundingAccount reference="9"/>
+    <inventory id="49">
+      <resources id="50">
+        <equipment id="51">
+          <quantity>9</quantity>
+          <name>Computer</name>
+          <inventory reference="49"/>
+        </equipment>
+        <supply id="52">
+          <quantity>10</quantity>
+          <name>Pencils</name>
+          <inventory reference="49"/>
+        </supply>
+      </resources>
+      <lab reference="2"/>
+    </inventory>
+    <director reference="35"/>
+    <uRLMS reference="1"/>
+  </singleLab>
+</urlms>

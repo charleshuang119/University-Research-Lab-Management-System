@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp">
+
+    <TextView
+        android:id="@+id/resourceIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_inventory_menu"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resourceQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textSize="20sp"
+            tools:text="50" />
+        <TextView
+            android:id="@+id/resourceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textSize="18sp"
+            tools:text="Paper clip" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/box_remove_resource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="right"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutResource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editResource"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/resource_name"
+            android:textSize="20dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editQuantity_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/resource_quantity"
+            android:textSize="20dp"
+            android:inputType="number"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <RadioGroup
+        android:id = "@+id/radio_group_resourceType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/radio_supply"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text= "@string/supply"
+            android:textSize="20dp"/>
+        <RadioButton
+            android:id="@+id/radio_equipment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/equipment"
+            android:textSize="20dp"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonAddInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/save_button"/>
+
+</LinearLayout>

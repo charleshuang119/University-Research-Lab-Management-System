@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">URLMS</string>
+
+    <string name="add_staff_title">Add Staff</string>
+    <string name="remove_staff_title">Remove Staff</string>
+
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="director">Director</string>
+    <string name="assistant">Assistant</string>
+    <string name="associate">Associate</string>
+    <string name="save_button">SAVE</string>
+
+
+    <string name="err_first_name">First name is required</string>
+    <string name="err_last_name">Last name is required</string>
+
+    <string name="err_invalid_name">Please fill in a valid name</string>
+    <string name="discard">DISCARD</string>
+    <string name="add_inventory_title">New Resource</string>
+    <string name="resource_name">Name</string>
+    <string name="resource_quantity">Quantity</string>
+    <string name="supply">Supply</string>
+    <string name="equipment">Equipment</string>
+    <string name="err_invalid_quantity">Please enter a valid number</string>
+    <string name="expense_description">Description</string>
+    <string name="progress_description">Description</string>
+    <string name="travel">Travel</string>
+    <string name="salary">Salary</string>
+    <string name="type_resource">Resource</string>
+    <string name="expense_amount">Amount</string>
+    <string name="allocatedAmount">Allocated</string>
+    <string name="remainingAmount">Remaining</string>
+    <string name="funding_account_title">Funding Account</string>
+    <string name="type_other">Other</string>
+    <string name="remove_resource_title">Remove Resource</string>
+</resources>

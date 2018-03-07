@@ -1,0 +1,161 @@
+namespace ca.mcgill.ecse321.urlms.model;
+
+class URLMS {
+  1 <@>- 0..1 Lab singleLab;
+  //String password;
+
+}
+
+class Lab {
+  
+  1 <@>- * Staff staff;
+  1 <@>- * ProgressUpdate progressUpdates;
+  1 <@>- 1 FundingAccount fundingAccount;
+  1 <@>- 1 Inventory;
+  1 -> 0..1 Director director;
+  String rootPassword;
+  
+}
+
+class Staff {
+  1 -> 0..1 Role role;
+  1 -> 0..* Expense expenses;
+  1 -> 0..* ProgressUpdate progressUpdates;
+  String firstName;
+  String lastName;
+  String password = "";
+  Integer iD;
+  
+}
+
+class Role {
+  abstract;
+  lazy Integer salary;
+  
+}
+
+class Associate {
+  isA Role;
+  //@Override
+  public String toString() {
+  	return "Associate";
+  }
+}
+
+class Assistant {
+  isA Role;
+  //@Override
+  public String toString() {
+  	return "Assistant";
+  }
+}
+
+class Director {
+  isA Role;
+  //@Override
+  public String toString() {
+  	return "Director";
+  }
+}
+
+class Inventory {
+  1 <@>- * Resource resources;
+}
+
+class ProgressUpdate {
+  String description;
+  String firstName;
+  String lastName;
+  Date date;
+}
+
+class Resource {
+	abstract;
+  Integer quantity;
+  settable String name;
+}
+
+class Supply {
+  isA Resource;
+  public String toString() {
+  	return "Supply";
+  }
+}
+
+class Equipment {
+  isA Resource;
+  public String toString() {
+  	return "Equipment";
+  }
+}
+
+class FundingAccount {
+  lazy float allocatedAmount;
+  lazy float remainingAmount;
+  1 -- * Expense;
+  
+  
+  //@Override
+  public float getRemainingAmount() {
+  	float total = 0;
+  	for (Expense e: expenses) {
+  		total += e.getAmount();
+  	}
+  	return allocatedAmount - total;
+  }
+  
+  public float getTravelExpensesTotal() {
+  	float total = 0;
+  	for (Expense e: expenses) {
+  		if (e.getType() == Type.TRAVEL) {
+  			total += e.getAmount();
+  		}
+  	}
+  	return total;
+  }
+  
+  public float getSalaryExpensesTotal() {
+  	float total = 0;
+  	for (Expense e: expenses) {
+  		if (e.getType() == Type.SALARY) {
+  			total += e.getAmount();
+  		}
+  	}
+  	return total;
+  }
+  
+  public float getResourceExpensesTotal() {
+  	float total = 0;
+  	for (Expense e: expenses) {
+  		if (e.getType() == Type.RESOURCE) {
+  			total += e.getAmount();
+  		}
+  	}
+  	return total;
+  }
+  
+   public float getOtherExpensesTotal() {
+  	float total = 0;
+  	for (Expense e: expenses) {
+  		if (e.getType() == Type.OTHER) {
+  			total += e.getAmount();
+  		}
+  	}
+  	return total;
+  }
+  
+}
+
+class Expense {
+  type {TRAVEL{} 
+  		SALARY{}
+  		RESOURCE{}
+  		OTHER{}
+  		}
+  String description;
+  float amount;
+  Date date;
+  
+}
+  
+    
